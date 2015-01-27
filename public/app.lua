@@ -26,7 +26,7 @@ ngx.say([[
     <title>DRvanR</title>
 </head>
 <body>
-    <h1 class="gray">Hello World!</h1>
+    <h1>Hello World!</h1>
     <p>Now including HTML!</p>
 </body>
 </html>

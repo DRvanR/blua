@@ -1,0 +1,9 @@
+@import('reset.css');
+
+* {
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+}
+
+.gray {
+  color: #ababab;
+}

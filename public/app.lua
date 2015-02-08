@@ -1,4 +1,10 @@
+require "DRvanR.Sparse.Trial"
+
+local test = Trial()
+local three = test:add(1,2)
+
 ngx.header['X-Are-We-Happy'] = 'why yes, yes we are!';
+ngx.header['X-Succes'] = 'sum:' .. three;
 ngx.say([[
 <!DOCTYPE html>
 <html>

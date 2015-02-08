@@ -1,4 +1,5 @@
 @import url(./materialize.min.css);
+@import url(./googlecode.css);
 
 @font-face {
     font-family: "FiraMono";
@@ -37,66 +38,73 @@
 }
 
 @media only screen and (min-width: 0px) {
-    header div.top-bar {
-        height: 24px;
-        line-height: 24px;
-    }
-    main {
-        margin-top: 24px;   
-    }
     nav a.button-collapse {
         margin: 0 24px;
     }
 }
 
 @media only screen and (min-width : 993px) {
-    header div.top-bar {
-        height: 32px;
-        line-height: 32px;
-    }
-    header ul.side-nav.fixed li.logo {
-        margin-top: 32px;
-    }
-    main {
-        margin-top: 32px;   
-    }
     .container {
         margin-left: 240px;
-        width: 85%;
     }
 }
 
 html {
     font-family: "FiraSans", "Roboto", "sans-serif";
+    line-height: 24px;
 }
 
 body, main {
     background-color: #f9f9f9;
 }
 
-header div.top-bar {
-    background-color: #1B5E20;
+code, .mono {
+    font-family: "FiraMono", monospace;
+}
+
+.container {
+    max-width: 760px;
+}
+
+header ul.side-nav.fixed li {
+    font-weight: bold;
 }
 header ul.side-nav.fixed li.logo {
+    border-bottom: 1px solid #ddd;
+}
+header ul.side-nav.fixed li.logo a {
     font-size: 2.1rem;
     color: rgba(0, 0, 0, 0.87);
+    line-height: 64px;
+}
+header ul.side-nav.fixed li.logo a span.muted {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 24px;
+}
+header ul.side-nav.fixed li a {
+    line-height: 44px;
+    font-size: 13px;
 }
 
 nav.top-nav {
-    background-color: #4CAF50;
+    background-color: #2196F3;
 }
-
 nav span.header-title {
     font-size: 24px;
     line-height: 64px;
 }
 
 footer.page-footer {
-    background-color: #4CAF50;
+    background-color: #2196F3;
     color: rgba(255, 255, 255, 0.8);
 }
 footer.page-footer .footer-copyright {
-    background-color: #1B5E20;
+    background-color: #1976D2;
 }
-
-  
+footer a {
+    color: rgba(255, 255, 255, 0.6);
+}
+footer a:active, footer a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}

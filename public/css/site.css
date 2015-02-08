@@ -1,0 +1,102 @@
+@import url(./materialize.min.css);
+
+@font-face {
+    font-family: "FiraMono";
+    src: url(../font/fira-sans/FiraMono-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "FiraMono";
+    src: url(../font/fira-sans/FiraMono-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "FiraSans";
+    src: url(../font/fira-sans/FiraSans-Thin.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: "FiraSans";
+    src: url(../font/fira-sans/FiraSans-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "FiraSans";
+    src: url(../font/fira-sans/FiraSans-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "FiraSans";
+    src: url(../font/fira-sans/FiraSans-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "FiraSans";
+    src: url(../font/fira-sans/FiraSans-Bold.ttf);
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 0px) {
+    header div.top-bar {
+        height: 24px;
+        line-height: 24px;
+    }
+    main {
+        margin-top: 24px;   
+    }
+    nav a.button-collapse {
+        margin: 0 24px;
+    }
+}
+
+@media only screen and (min-width : 993px) {
+    header div.top-bar {
+        height: 32px;
+        line-height: 32px;
+    }
+    header ul.side-nav.fixed li.logo {
+        margin-top: 32px;
+    }
+    main {
+        margin-top: 32px;   
+    }
+    .container {
+        margin-left: 240px;
+        width: 85%;
+    }
+}
+
+html {
+    font-family: "FiraSans", "Roboto", "sans-serif";
+}
+
+body, main {
+    background-color: #f9f9f9;
+}
+
+header div.top-bar {
+    background-color: #1B5E20;
+}
+header ul.side-nav.fixed li.logo {
+    font-size: 2.1rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+nav.top-nav {
+    background-color: #4CAF50;
+}
+
+nav span.header-title {
+    font-size: 24px;
+    line-height: 64px;
+}
+
+footer.page-footer {
+    background-color: #4CAF50;
+    color: rgba(255, 255, 255, 0.8);
+}
+footer.page-footer .footer-copyright {
+    background-color: #1B5E20;
+}
+
+  

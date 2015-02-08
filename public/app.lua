@@ -52,7 +52,7 @@ ngx.say([[
         <div class="container">
             <div class="row">
                 <div class="col s12 m10 l10 offset-m1 offset-l1">
-                    <div class="card white z-depth-2">
+                    <div class="card white">
                         <div class="card-content">
                             <span class="card-title">Lipsum</span>
                             <p>

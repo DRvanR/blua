@@ -1,3 +1,5 @@
+package.path = "../vendor/?.lua;" .. package.path
+
 require "DRvanR.Sparse.Trial"
 
 local test = Trial()

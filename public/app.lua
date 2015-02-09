@@ -1,10 +1,10 @@
-require "DRvanR.Sparse.Trial"
+-- need to work on this...
+package.path = "/var/www/drvanr.test/vendor/?.lua;" .. package.path
 
-local trial = trial
-local three = trial:add(1,2)
+local s = require "DRvanR.Sparse.Sparse"
+local sparse = s:new()
 
-ngx.header['X-Are-We-Happy'] = 'why yes, yes we are!';
-ngx.header['X-Succes'] = 'sum:' .. three;
+ngx.header['X-Are-We-Happy'] = sparse:parse('why yes, yes we are!');
 ngx.say([[
 <!DOCTYPE html>
 <html>

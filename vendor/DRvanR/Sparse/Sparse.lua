@@ -18,7 +18,7 @@ end
 
 function Sparse:load(filepath)
     local path = self._root .. gsub(filepath, ':', '/')
-    local file = open(path, "rb")
+    local file = fopen(path, "rb")
 
     if not file then 
         error(Error:new(format("Template not found: '%s'", path)))

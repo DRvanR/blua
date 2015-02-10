@@ -43,6 +43,12 @@
     }
 }
 
+@media only screen and (max-width : 640px) {
+    .container {
+        width:100%;
+    }
+}
+
 @media only screen and (min-width : 993px) {
     .container {
         margin-left: 240px;

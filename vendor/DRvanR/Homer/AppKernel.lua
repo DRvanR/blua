@@ -9,7 +9,8 @@ local Sparse = require "DRvanR.Sparse.Sparse"
 local Templating = Sparse:new('/var/www/drvanr.test/src/')
 
 local function safe_call_func(fn, ...)
-    local ok, valueOrError = pcall(fn, unpack(arg))
+    local arguments = arg or {}
+    local ok, valueOrError = pcall(fn, unpack(arguments))
 
     if not ok then
         error("D'oh! Error Handling not yet implemented :( " .. valueOrError)

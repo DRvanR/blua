@@ -1,5 +1,7 @@
 -- imports
 local Error = require "DRvanR.Sparse.Error"
+
+local fopen = io.open
 local gsub = string.gsub
 local format = string.format
 

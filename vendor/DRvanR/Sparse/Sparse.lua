@@ -2,7 +2,6 @@
 local Error = require "DRvanR.Sparse.Error"
 
 local fopen = io.open
-local gsub = string.gsub
 local format = string.format
 
 -- class definition
@@ -18,7 +17,7 @@ end
 
 function Sparse:load(filepath)
     local path = self.root .. filepath
-    path:gsub(':', '/Resources/View/', 1):gsub(':', '/'):gsub('//', '/')
+    path = path:gsub(':', '/Resources/View/', 1):gsub(':', '/'):gsub('//', '/')
     local file = fopen(path, "rb")
 
     if not file then 

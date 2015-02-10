@@ -22,6 +22,15 @@ function Error:previous()
     return self._previous
 end
 
--- __toString implementation?
+function Error:__toString()
+    local message = ''
+    local current = self
+    while current do
+        message = message .. '[' .. current:code() .. '] ' .. current:message() .. "\n"
+        current = current:previous()
+    end
+
+    return message
+end
 
 return Error

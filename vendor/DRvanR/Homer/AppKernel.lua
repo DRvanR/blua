@@ -12,7 +12,7 @@ local function safe_call_func(fn, ...)
     local ok, valueOrError = pcall(fn, unpack(arg))
 
     if not ok then
-        error("D'oh! Error Handling not yet implemented :(")
+        error("D'oh! Error Handling not yet implemented :( " .. valueOrError)
     end
 
     return valueOrError
@@ -24,7 +24,9 @@ end
 
 function AppKernel:handle()
     -- for now default implementation
-    local content = safe_call_func(Templating:load, 'Blog::index.html')
+    local content = safe_call_func(function ()
+        return Templating:load('Blog::index.html')
+    end)
 
     ngx.header['X-Are-We-Happy'] = 'why yes, yes we are!';
     ngx.say(content);

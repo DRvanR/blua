@@ -10,14 +10,15 @@ local Sparse = { _VERSION = '0.1' }
 local class = { __index = Sparse }
 
 -- public API
-function Sparse:new(root)
-    assert(root, 'Root must be set in order to use Sparse')
-    local instance = {_root=root}
+function Sparse:new(rootPath)
+    assert(rootPath, 'Root pmust be set in order to use Sparse')
+    local instance = {root=rootPath}
     return setmetatable(instance, class)
 end
 
 function Sparse:load(filepath)
-    local path = self._root .. gsub(filepath, ':', '/')
+    local path = self.root .. filepath
+    path:gsub(':', '/Resources/View/', 1):gsub(':', '/'):gsub('//', '/')
     local file = fopen(path, "rb")
 
     if not file then 
